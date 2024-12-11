@@ -42,7 +42,6 @@ function calendar() {
     m = checkTime(m);
     document.getElementById('time').innerHTML = h + ":" + m + " " + ampm;
 
-    var t = setTimeout(startTime, 500);
     setInterval(function() {
       location.reload();
     }, 60000);
