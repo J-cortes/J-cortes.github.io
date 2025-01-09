@@ -44,7 +44,7 @@ function formatTime(date) {
     h = h ? h : 12; // 0 becomes 12 for the 12-hour format
     m = checkTime(m);
 
-    return `${h}:${m} ${ampm} ${y}`;
+    return `${h}:${m} ${ampm}`;
 }
 
 // Adds a leading zero if time is less than 10
