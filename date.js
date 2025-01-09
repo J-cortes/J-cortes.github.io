@@ -37,13 +37,14 @@ function getTimeOfDay(hour) {
 function formatTime(date) {
     var h = date.getHours();
     var m = date.getMinutes();
+    var y = date.getFullYear();
     var ampm = h >= 12 ? 'PM' : 'AM';
     
     h = h % 12;
     h = h ? h : 12; // 0 becomes 12 for the 12-hour format
     m = checkTime(m);
 
-    return `${h}:${m} ${ampm}`;
+    return `${h}:${m} ${ampm} ${y}`;
 }
 
 // Adds a leading zero if time is less than 10
